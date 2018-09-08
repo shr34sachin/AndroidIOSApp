@@ -4,6 +4,10 @@ Mobile app created in react-native. It will be  for android as well as iOS platf
 For android, ubuntu has been used.
 For iOS, mac OS.
 
+## To add react-navigation
+myapp>> npm install --save react-navigation
+
+
 ## Git set up-ATOM
 [remote "origin"]
 url = "https://github.com/shr34sachin/AndroidIOSApp.git"

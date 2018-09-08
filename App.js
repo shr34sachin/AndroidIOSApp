@@ -8,6 +8,10 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, TextInput, Button, Alert} from 'react-native';
+import Splash from './src/components/Splash/Splash';
+import Login from './src/components/Login/Login';
+import {StackNavigator} from 'react-navigation';
+
 // import Greeting from './app/components/TestProps';
 
 // import { AppRegistry } from 'react-native';
@@ -54,35 +58,7 @@ class Blink extends Component {
 export default class App extends Component{
   render() {
     return (
-      <View>
-        <View style={myStyle.viewStyling50}>
-          <Text>Hello world</Text>
-        </View>
-        <View style={myStyle.viewStyling150}>
-          <Blink text="This is blinking"></Blink>
-        </View>
-        <Text style={myStyle.redColor}>Hello world</Text>
-        <Greeting name='sachin'></Greeting>
-        <Blink text="This is blinking"></Blink>
-
-        <Text>Name: </Text>
-        <TextInput style={{height: 40}}
-          placeholder="Enter your name">
-        </TextInput>
-
-        <Button
-          onPress={() => {
-            Alert.alert('You pressed the button');
-          }
-          }
-          title = 'press me'>
-        </Button>
-      </View>
-      // <View style={styles.container}>
-      //   <Text style={styles.welcome}>Welcome to React Native!</Text>
-      //   <Text style={styles.instructions}>still working?</Text>
-      //   <Text style={styles.instructions}>{instructions}</Text>
-      // </View>
+      <Login></Login>
     );
   }
 }
@@ -124,3 +100,37 @@ const myStyle = StyleSheet.create({
 //     marginBottom: 5,
 //   },
 // });
+// <View style={styles.container}>
+//   <Text style={styles.welcome}>Welcome to React Native!</Text>
+//   <Text style={styles.instructions}>still working?</Text>
+//   <Text style={styles.instructions}>{instructions}</Text>
+// </View>
+
+// <View>
+//   <View style={myStyle.viewStyling50}>
+//     <Text>Hello world</Text>
+//   </View>
+//
+//   <View style={myStyle.viewStyling150}>
+//     <Blink text="This is blinking"></Blink>
+//   </View>
+//
+//   <Text style={myStyle.redColor}>Hello world</Text>
+//   <Greeting name='sachin'></Greeting>
+//   <Blink text="This is blinking"></Blink>
+//
+//   <Text>Name: </Text>
+//
+//   <TextInput style={{height: 40}}
+//     placeholder="Enter your name">
+//   </TextInput>
+//
+//   <Button
+//     onPress={() => {
+//       Alert.alert('You pressed the button');
+//     }
+//     }
+//     title = 'press me'>
+//   </Button>
+//
+// </View>
