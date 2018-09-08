@@ -10,7 +10,10 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, TextInput, Button, Alert} from 'react-native';
 import Splash from './src/components/Splash/Splash';
 import Login from './src/components/Login/Login';
-import {StackNavigator} from 'react-navigation';
+
+// Sept 08, 2018 - for navigation between pages
+// import {StackNavigator} from 'react-navigation';
+import NavigationApp from './src/components/NavigationApp/NavigationApp';
 
 // import Greeting from './app/components/TestProps';
 
@@ -58,7 +61,8 @@ class Blink extends Component {
 export default class App extends Component{
   render() {
     return (
-      <Login></Login>
+      // <Login></Login>
+      <NavigationApp></NavigationApp>
     );
   }
 }
